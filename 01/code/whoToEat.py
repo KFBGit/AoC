@@ -15,4 +15,5 @@ with open(filename, 'r') as file:
         
         elfCalories[counterOfElfs].append(int(line.rstrip()))
 
-print("The Elf with the most total Calories carries: ", max(map(sum, elfCalories)), "calories")
+elfCalories.sort(key=sum, reverse=True)
+print("The Elf with the most total calories carries: ", sum(elfCalories[0]), "calories")
