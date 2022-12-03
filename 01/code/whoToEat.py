@@ -17,3 +17,4 @@ with open(filename, 'r') as file:
 
 elfCalories.sort(key=sum, reverse=True)
 print("The Elf with the most total calories carries: ", sum(elfCalories[0]), "calories")
+print("The 3 Elfs who carry the most calories carry a total of: ", (sum(elfCalories[0]) + sum(elfCalories[1]) + sum(elfCalories[2])), "calories")
